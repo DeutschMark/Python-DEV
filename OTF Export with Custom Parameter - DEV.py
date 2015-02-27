@@ -11,18 +11,8 @@ thisFont = Glyphs.font # frontmost font
 thisFontMaster = thisFont.selectedFontMaster # active master
 listOfSelectedLayers = thisFont.selectedLayers # active layers of selected glyphs
 
-# brings macro window to front and clears its log:
 Glyphs.clearLog()
-
 thisFont.disableUpdateInterface() # suppresses UI updates in Font View
-#print dir(thisFont)
-
-## Master Custom Parameter:
-print "MasterCP:", thisFontMaster.customParameters
-
-## Font Custom Parameter:
-print "FontCP:", thisFont.customParameters
-
 
 ######################################
 ## CP Handling

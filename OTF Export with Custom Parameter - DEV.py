@@ -47,23 +47,6 @@ def removeCP():
 
 
 
-##### Use either Spinner OR ProgressBar
-# class ProgressSpinnerPopUp(object):
-#     def __init__(self):
-#         self.w = Window((80, 52))
-#         self.w.spinner = ProgressSpinner((24, 10, 32, 32),
-#                                 displayWhenStopped=False)
-#         self.w.spinner.start()
-#         self.w.open()
-
-#         setCP(cpName, cpValue)
-#         OTFExport()
-#         removeCP()
-
-#         self.w.close()
-# ProgressSpinnerPopUp()
-
-
 delay = 5
 class ProgressBarDemo(object):
     def __init__(self):

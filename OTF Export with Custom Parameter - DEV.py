@@ -53,7 +53,7 @@ def removeCP():
 delay = 5
 class ProgressBarDemo(object):
     def __init__(self):
-        self.w = Window((200, 65))
+        self.w = Window((500, 0, 200, 40), closable=False)
         self.w.bar = ProgressBar((10, 10, -10, 16))
         self.w.open()
 

@@ -1,4 +1,4 @@
-#MenuTitle: OTF Export with Custom Parameter 01.py
+#MenuTitle: OTF Export with Custom Parameter v1
 # -*- coding: utf-8 -*-
 __doc__="""
 Export OTF with CustomParameter on the fly and Remove CP again
@@ -15,11 +15,14 @@ listOfSelectedLayers = thisFont.selectedLayers # active layers of selected glyph
 Glyphs.clearLog()
 thisFont.disableUpdateInterface() # suppresses UI updates in Font View
 
+## set the custom parameter
+cpName = "Rename Glyphs"
+cpValue = ("A=Alpha", "B=Beta", "C=Gamma", "G=Iota") ## must be a tuple
+
+
 def setCP(cpName, cpValue):
 	'''Set the Custom Parameter(s) for all instances'''
-	## set the custom parameter
-	cpName = "Rename Glyphs"
-	cpValue = ("A=Alpha", "B=Beta", "C=Gamma", "G=Iota") ## must be a tuple
+
 	## check each CP for existing ones
 	for instance in thisFont.instances:
 		if not instance.customParameters[cpName]:
